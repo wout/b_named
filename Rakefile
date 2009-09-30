@@ -1,6 +1,22 @@
 require 'rubygems'
 require 'rake'
 
+#-Github begin
+#-Github   require 'jeweler'
+#-Github   Jeweler::Tasks.new do |gem|
+#-Github     gem.name = "b_named"
+#-Github     gem.summary = %Q{A Ruby wrapper for the bNamed.net API.}
+#-Github     gem.description = %Q{Currently it enables you to retrieve a list of domains and their status.}
+#-Github     gem.email = "wout@qimmiq.net"
+#-Github     gem.homepage = "http://github.com/wout/b_named"
+#-Github     gem.authors = ["wout"]
+#-Github     gem.add_development_dependency "rspec"
+#-Github     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+#-Github   end
+#-Github rescue LoadError
+#-Github   puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
+#-Github end
+
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
@@ -11,8 +27,8 @@ begin
     gem.homepage = "http://github.com/wout/b_named"
     gem.authors = ["wout"]
     gem.add_development_dependency "rspec"
-    # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
+  Jeweler::GemcutterTasks.new
 rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
 end

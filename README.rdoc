@@ -33,7 +33,7 @@ Currently it enables you to retrieve a list of domains and their status.
 
 == INSTALL:
 
-* sudo gem install b_named
+* sudo gem install b_named --source http://gemcutter.org
 
 == LICENSE:
 
