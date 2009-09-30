@@ -3,10 +3,10 @@ $:.unshift(File.dirname(__FILE__)) unless
 
 require 'rubygems'
 
-gem 'httparty', '0.4.3'
+gem 'httparty', '>=0.4.3'
 require 'httparty'
 
-gem 'mash', '0.0.3'
+gem 'mash', '>=0.0.3'
 require 'mash'
 
 require 'b_named/availability'
