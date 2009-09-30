@@ -15,16 +15,16 @@ Currently it enables you to retrieve a list of domains and their status.
 
 # controller example
 
-bnamed = BNamed::Availability.new('012345', 'your pass_key')
-@result = bnamed.check('rubyonrails', %w(com net org info name biz))
+  bnamed = BNamed::Availability.new('012345', 'your_pass_key')
+  @result = bnamed.check('rubyonrails', %w(com net org info name biz))
 
 # view example (haml)
 
-.domains
-  - @result.domains.each do |domain|
-    .domain
-      .name= domain.sld + '.' + domain.tld
-      .text= domain.availability_text
+  .domains
+    - @result.domains.each do |domain|
+      .domain
+        .name= domain.sld + '.' + domain.tld
+        .text= domain.availability_text
 
 == REQUIREMENTS:
 
