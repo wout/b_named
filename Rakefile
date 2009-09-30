@@ -20,12 +20,17 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "b_named"
-    gem.summary = %Q{A Ruby wrapper for the bNamed.net API.}
+    gem.name        = "b_named"
+    gem.summary     = %Q{A Ruby wrapper for the bNamed.net API.}
     gem.description = %Q{Currently it enables you to retrieve a list of domains and their status.}
-    gem.email = "wout@qimmiq.net"
-    gem.homepage = "http://github.com/wout/b_named"
-    gem.authors = ["wout"]
+    gem.email       = "wout@qimmiq.net"
+    gem.homepage    = "http://github.com/wout/b_named"
+    gem.authors     = ["wout"]
+    gem.files       = FileList["[A-Z]*", "{lib,spec}/**/*"]
+    
+    gem.add_dependency('mash', '0.0.3')
+    gem.add_dependency('httparty', '>= 0.4.3')
+    
     gem.add_development_dependency "rspec"
   end
   Jeweler::GemcutterTasks.new
