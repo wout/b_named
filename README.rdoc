@@ -21,14 +21,17 @@ Currently it enables you to retrieve a list of domains and their status.
 # view example (haml)
 
   .domains
-    - @result.domains.each do |domain|
-      .domain
-        .name= domain.sld + '.' + domain.tld
-        .text= domain.availability_text
+    - if @result.error_code == 0
+      - @result.domains.each do |domain|
+        .domain
+          .name= domain.sld + '.' + domain.tld
+          .text= domain.availability_text
+    - else
+      .error= @result.error_text
 
 == REQUIREMENTS:
 
-* httparty gem (>= 0.4.0)
+* httparty gem (>= 0.4.3)
 * mash gem (>= 0.0.3)
 
 == INSTALL:

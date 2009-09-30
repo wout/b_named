@@ -29,7 +29,7 @@ module BNamed
         result_hash[:domains]     = raw_result.each{ |h| Mash.new(h.each_pair{ |k,v| h[underscore(k)] = h.delete(k) }) }
         result_hash[:time]        = response['Time'].tr(',','.').to_f
         result_hash[:done]        = response['Done'] == 'True'
-        result_hash[:error_code]  = response['ErrorCode']
+        result_hash[:error_code]  = response['ErrorCode'].to_i
         result_hash[:error_text]  = response['ErrorText']
         
         Mash.new(result_hash)
