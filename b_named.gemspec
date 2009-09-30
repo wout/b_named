@@ -17,13 +17,15 @@ Gem::Specification.new do |s|
      "README.rdoc"
   ]
   s.files = [
-    ".document",
-     ".gitignore",
-     "LICENSE",
+    "LICENSE",
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "b_named.gemspec",
      "lib/b_named.rb",
+     "lib/b_named/availability.rb",
+     "lib/b_named/version.rb",
+     "pkg/b_named-0.0.1.gem",
      "spec/b_named_spec.rb",
      "spec/spec_helper.rb"
   ]
