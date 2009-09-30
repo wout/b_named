@@ -1,6 +1,6 @@
 module BNamed
   class Availability
-    API_URL = 'https://www.bNamed.net/en/API.asp'
+    API_URL = 'https://www2.bNamed.net/en/api.asp'
     
     def initialize(uid, pass_key)
       @uid = uid
