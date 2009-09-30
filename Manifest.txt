@@ -2,6 +2,9 @@ b_named.gemspec
 History.txt
 Manifest.txt
 PostInstall.txt
+pkg/b_named-0.0.1
+pkg/b_named-0.0.1.gem
+pkg/b_named-0.0.1.tgz
 README.rdoc
 Rakefile
 lib/b_named.rb

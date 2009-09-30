@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description = %q{A Ruby wrapper for the bNamed.net API.}
   s.email = %q{wout@qimmiq.net}
   s.extra_rdoc_files = ["README.rdoc"]
-  s.files = ["History.txt", "Manifest.txt", "PostInstall.txt", "README.rdoc", "Rakefile", "lib/b_named.rb", "lib/b_named/availability.rb", "lib/b_named/version.rb", "script/console", "script/destroy", "script/generate", "spec/b_named_spec.rb", "spec/spec.opts", "spec/spec_helper.rb", "tasks/rspec.rake"]
+  s.files = ["History.txt", "Manifest.txt", "pkg/b_named-0.0.1", "pkg/b_named-0.0.1.gem", "pkg/b_named-0.0.1.tgz", "PostInstall.txt", "README.rdoc", "Rakefile", "lib/b_named.rb", "lib/b_named/availability.rb", "lib/b_named/version.rb", "script/console", "script/destroy", "script/generate", "spec/b_named_spec.rb", "spec/spec.opts", "spec/spec_helper.rb", "tasks/rspec.rake"]
   s.has_rdoc = true
   s.homepage = %q{http://github.com/wout/b_named}
   s.rdoc_options = ["--inline-source", "--charset=UTF-8"]
