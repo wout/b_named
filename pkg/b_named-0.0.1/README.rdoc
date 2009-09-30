@@ -5,7 +5,7 @@
 == DESCRIPTION:
 
 A Ruby wrapper for the bNamed.net API.
-Currently it enables you to retrieve a list of domains ant their status.
+Currently it enables you to retrieve a list of domains and their status.
 
 == FEATURES/PROBLEMS:
 
